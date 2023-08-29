@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 26rem;
+}
+
+article {
+  background-color: rgb(12, 126, 44);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border: 2px solid #000000;
+  height: 18rem;
+  padding: 1rem 2rem;
+}
+
+article header {
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+hr {
+  height: 2px;
+  border: solid 1px #ab6528;
+  background-color: #ab6528;
+  color: #ab6528;
+}
+
+p {
+  padding: 0.25rem 0rem;
+}
+
+.mark-text {
+  color: rgb(255, 213, 0);
+}
+
+footer {
+  background-color: #000000;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
