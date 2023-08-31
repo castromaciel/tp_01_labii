@@ -1,27 +1,27 @@
 <?php
+  /** Importación del encabezado */
+  require_once('./html/encabezado.html');
 
-/** Importación del encabezado */
-require_once('./html/encabezado.html');
+  /**
+   * Inicialización de constantes y variables
+   */
+  const APORTE_JUBILATORIO = 13;
+  const OBRA_SOCIAL = 3.5;
 
-/**
- * Inicialización de constantes y variables
- */
-const APORTE_JUBILATORIO = 13;
-const OBRA_SOCIAL = 3.5;
+  $nombreDelEmpleado = 'Maciel Castro';
+  $sueldoBasico = mt_rand(170000 * 100, 290000 * 100) / 100;
+  $dtoAporteJubilatorio = $sueldoBasico * APORTE_JUBILATORIO / 100;
+  $dtoObraSocial = $sueldoBasico * OBRA_SOCIAL / 100;
+  $sueldoNeto = $sueldoBasico - $dtoAporteJubilatorio - $dtoObraSocial;
 
-$nombreDelEmpleado = 'Maciel Castro';
-$sueldoBasico = mt_rand(170000 * 100, 290000 * 100) / 100;
-$dtoAporteJubilatorio = $sueldoBasico * APORTE_JUBILATORIO / 100;
-$dtoObraSocial = $sueldoBasico * OBRA_SOCIAL / 100;
-$sueldoNeto = $sueldoBasico - $dtoAporteJubilatorio - $dtoObraSocial;
-
-/**
- * Formatear campos a un estándar, con 2 decimales separados con coma y divisor de miles con punto.
- */
-$printSueldoBasico = number_format($sueldoBasico, 2, '.', ',');
-$printDtoAporteJubilatorio = number_format($dtoAporteJubilatorio, 2, '.', ',');
-$printDtoObraSocial = number_format($dtoObraSocial, 2, '.', ',');
-$printSueldoNeto = number_format($sueldoNeto, 2, '.', ',');
+  /**
+   * Formatear campos a un estándar, con 2 decimales
+   * separados con coma y divisor de miles con punto.
+   */
+  $printSueldoBasico = number_format($sueldoBasico, 2, '.', ',');
+  $printDtoAporteJubilatorio = number_format($dtoAporteJubilatorio, 2, '.', ',');
+  $printDtoObraSocial = number_format($dtoObraSocial, 2, '.', ',');
+  $printSueldoNeto = number_format($sueldoNeto, 2, '.', ',');
 
 ?>
 <article>
@@ -73,6 +73,6 @@ $printSueldoNeto = number_format($sueldoNeto, 2, '.', ',');
   </table>
 </article>
 <?php
-/** Importación del pie */
-require_once('./html/pie.html');
+  /** Importación del pie de página*/
+  require_once('./html/pie.html');
 ?>

@@ -1,7 +1,13 @@
 <?php
-require_once('./php/encabezado.php');
-$saludo = "Hola mundo";
+  /** Importación del encabezado */
+  require_once('./php/encabezado.php');
 
-echo "<p>" . $saludo . "</p>";
-require_once('./php/pie.php');
+  /** Declaración de variables */
+  $saludo = "Hola mundo";
+
+  /** Mostrar el mensaje */
+  echo "<p>" . $saludo . "</p>";
+
+  /** Importación del pie de página */
+  require_once('./php/pie.php');
 ?>

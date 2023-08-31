@@ -1,15 +1,14 @@
 <?php
-
-/** Importación del encabezado */
-require_once('./html/encabezado.html');
-/**
- * Inicialización de constantes y variables
- */
-const IVA = 21;
-$nombreDelProducto = "Cosito";
-$precio = mt_rand(10000 * 100, 50000 * 100) / 100;
-$impuestoDelProducto = $precio * IVA / 100;
-$totalAPagar = $precio + $impuestoDelProducto
+  /** Importación del encabezado */
+  require_once('./html/encabezado.html');
+  /**
+   * Inicialización de constantes y variables
+   */
+  const IVA = 21;
+  $nombreDelProducto = "Cosito";
+  $precio = mt_rand(10000 * 100, 50000 * 100) / 100;
+  $impuestoDelProducto = $precio * IVA / 100;
+  $totalAPagar = $precio + $impuestoDelProducto
 ?>
 <article>
   <table>
@@ -56,6 +55,6 @@ $totalAPagar = $precio + $impuestoDelProducto
   </table>
 </article>
 <?php
-/** Importación del pie */
-require_once('./html/pie.html')
+  /** Importación del pie de página*/
+  require_once('./html/pie.html')
 ?>
